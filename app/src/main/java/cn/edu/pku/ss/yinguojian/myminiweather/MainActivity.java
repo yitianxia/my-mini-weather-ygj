@@ -109,6 +109,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         if (v.getId() == R.id.title_city_manager){
             Intent i = new Intent(this,SelectCity.class);
+            i.putExtra("city",cityTv.getText());
 //            startActivity(i);
             startActivityForResult(i,1);
         }
@@ -368,7 +369,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     void updateImage(TodayWeather todayWeather) {
-        int pm = Integer.parseInt(todayWeather.getPm25());
+        int pm = 0;
+        if (todayWeather.getPm25()!=null){
+            pm = Integer.parseInt(todayWeather.getPm25());
+        }
         String type = todayWeather.getType();
         if(pm>=0&&pm<51) {
             pmImg.setBackgroundResource(R.drawable.biz_plugin_weather_0_50);
