@@ -67,9 +67,6 @@ public class SelectCity extends Activity implements View.OnClickListener {
         mList = (ListView)findViewById(R.id.title_list);
         MyApplication myApplication = (MyApplication)getApplication();
         cityList = myApplication.getCityList();
-        //for (City city : cityList) {
-        //filterDataList
-        //}
         mAdapter = new CityAdapter(SelectCity.this, cityList);
         mList.setAdapter(mAdapter);
         mList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
