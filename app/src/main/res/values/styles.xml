@@ -7,5 +7,141 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <!-- 工具栏 -->
+    <style name="Title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- 工具栏图片 -->
+    <style name="Title_pic">
+        <item name="android:layout_width">45.0dip</item>
+        <item name="android:layout_height">45.0dip</item>
+    </style>
+    <!-- 工具栏分割线 -->
+    <style name="Title_seperator">
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+    </style>
+    <!-- 工具栏标题 -->
+    <style name="Title_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textSize">22.0sp</item>
+    </style>
+
+    <!-- 今日天气 -->
+    <style name="Weather_today">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10.0dip</item>
+    </style>
+    <!-- 城市名称，发布时间，湿度信息 -->
+    <style name="Basic_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">15.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- PM2.5整体信息快 -->
+    <style name="Pm2_5_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- 污染等级 -->
+    <style name="Pm2_5_quality">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <!-- PM2.5详情布局 -->
+    <style name="Pm2_5_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+    </style>
+    <!-- PM2.5图片 -->
+    <style name="Pm2_5_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <!-- PM2.5文字详情 -->
+    <style name="Pm2_5_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- 今日天气信息块 -->
+    <style name="Weather_today_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+    </style>
+    <!-- 天气情况图片 -->
+    <style name="Weather_today_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <!-- 今日天气信息 -->
+    <style name="Weather_today_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_toRightOf">@id/weather_img</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- 选择城市工具栏标题 -->
+    <style name="Select_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20.0sp</item>
+        <!-- <item name="android:textSize">20.0dip</item> -->
+    </style>
+    <!-- 选择城市工具栏分割线 -->
+    <style name="Select_seperator">
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 搜索框 -->
+    <style name="Search_city">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4.0dip</item>
+        <item name="android:hint">搜索全国城市（中文）</item>
+        <item name="android:drawableLeft">@drawable/magnifying_glass</item>
+        <item name="android:drawablePadding">6.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/contact_search_box_edittext_keyword_background</item>
+        <item name="android:textSize">15.0sp</item>
+    </style>
 
 </resources>

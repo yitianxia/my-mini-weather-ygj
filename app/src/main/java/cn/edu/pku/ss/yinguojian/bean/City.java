@@ -10,7 +10,7 @@ public class City {
     private String number;
     private String firstPY;
     private String allPY;
-    private String allFristPY;
+    private String allFirstPY;
 
     public City(String province, String city, String number, String
             firstPY, String allPY, String allFristPY) {
@@ -19,7 +19,7 @@ public class City {
         this.number = number;
         this.firstPY = firstPY;
         this.allPY = allPY;
-        this.allFristPY = allFristPY;
+        this.allFirstPY = allFristPY;
     }
 
     public String getProvince() {
@@ -62,11 +62,11 @@ public class City {
         this.allPY = allPY;
     }
 
-    public String getAllFristPY() {
-        return allFristPY;
+    public String getAllFirstPY() {
+        return allFirstPY;
     }
 
-    public void setAllFristPY(String allFristPY) {
-        this.allFristPY = allFristPY;
+    public void setAllFirstPY(String allFristPY) {
+        this.allFirstPY = allFristPY;
     }
 }
