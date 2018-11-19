@@ -247,6 +247,31 @@
             </RelativeLayout>
         </RelativeLayout>
         <!-- 六日天气信息 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"></android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/indicator1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/page_indicator_focused"/>
+            <ImageView
+                android:id="@+id/indicator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/page_indicator_unfocused"/>
+        </LinearLayout>
+
         <!-- 广告等信息 -->
     </LinearLayout>
 </RelativeLayout>

@@ -144,4 +144,35 @@
         <item name="android:textSize">15.0sp</item>
     </style>
 
+    <!-- 未来天气框 -->
+    <style name="Future">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- 未来天气信息 -->
+    <style name="Future_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- 未来天气图片布局框 -->
+    <style name="Future_imgLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!-- 未来天气图片 -->
+    <style name="Future_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+
 </resources>

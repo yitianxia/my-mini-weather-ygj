@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/future1"
+        style="@style/Future">
+        <TextView
+            android:id="@+id/future1_day"
+            style="@style/Future_info"
+            android:textSize="20sp" />
+        <LinearLayout
+            style="@style/Future_imgLayout">
+            <ImageView
+                android:id="@+id/future1_image"
+                style="@style/Future_image" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/future1_temperature"
+            style="@style/Future_info"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/future1_weather"
+            style="@style/Future_info"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/future1_wind"
+            style="@style/Future_info"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/future2"
+        style="@style/Future">
+        <TextView
+            android:id="@+id/future2_day"
+            style="@style/Future_info"
+            android:textSize="20sp" />
+        <LinearLayout
+            style="@style/Future_imgLayout">
+            <ImageView
+                android:id="@+id/future2_image"
+                style="@style/Future_image" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/future2_temperature"
+            style="@style/Future_info"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/future2_weather"
+            style="@style/Future_info"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/future2_wind"
+            style="@style/Future_info"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/future3"
+        style="@style/Future">
+        <TextView
+            android:id="@+id/future3_day"
+            style="@style/Future_info"
+            android:textSize="20sp" />
+        <LinearLayout
+            style="@style/Future_imgLayout">
+            <ImageView
+                android:id="@+id/future3_image"
+                style="@style/Future_image" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/future3_temperature"
+            style="@style/Future_info"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/future3_weather"
+            style="@style/Future_info"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/future3_wind"
+            style="@style/Future_info"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

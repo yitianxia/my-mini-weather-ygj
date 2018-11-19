@@ -38,10 +38,12 @@ public class MyApplication extends Application {
         initCityList();
     }
 
+    //  构造函数，单例模式
     public static MyApplication getInstance() {
         return mApplication;
     }
 
+    //  获取数据库路径并初始化CityDB，找不到路径则新建数据库并读取db
     private CityDB openCityDB() {
         String path = "/data"
                 + Environment.getDataDirectory().getAbsolutePath
@@ -83,6 +85,7 @@ public class MyApplication extends Application {
         return new CityDB(this, path);
     }
 
+    //  开启线程读取数据库
     private void initCityList() {
         mCityList = new ArrayList<City>();
         new Thread(new Runnable() {
@@ -93,6 +96,7 @@ public class MyApplication extends Application {
         }).start();
     }
 
+    //  读取数据库中数据并赋值List
     private boolean prepareCityList() {
         mCityList = mCityDB.getAllCity();
         int i = 0;
@@ -106,6 +110,7 @@ public class MyApplication extends Application {
         return true;
     }
 
+    //  获取城市列表，对外提供接口
     public List<City> getCityList() {
         return mCityList;
     }
